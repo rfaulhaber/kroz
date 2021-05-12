@@ -1,10 +1,10 @@
 #lang racket/base
 
-(require "lexer.rkt" brag/support)
+(require "lexer.rkt"
+         brag/support)
 
-(define (make-tokenizer ip [path #f])
+(define (make-tokenizer ip)
   (port-count-lines! ip)
-  (lexer-file-path path)
   (define (next-token) (kroz-lexer ip))
   next-token)
 

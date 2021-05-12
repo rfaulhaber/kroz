@@ -6,6 +6,11 @@ Kroz is mostly an experiment in writing transpilers in Racket, as explored in
 
 Every valid Kroz program outputs a text-based adventure game.
 
+This repo is very much a work in progress.
+
+## Status
+We may have a lexer and a parser! And some unit tests.
+
 ## Language reference
 The language consists of a series of prompts and expected responses. A
 Kroz game is a tree of decisions.
